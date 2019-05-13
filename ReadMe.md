@@ -1,16 +1,16 @@
-##MHN
+## MHN
 The implementation of MHN in our paper:
 
 
 
-##Require
+## Require
 
 * Python 3.6
 
-##Reproducing Results
+## Reproducing Results
 * Run `python3 run.py`
 
-##Example input data
+## Example input data
 the word has conveted into vector
 
 * accu:parent class
@@ -23,7 +23,7 @@ the word has conveted into vector
 30, 38], "accu": ["故意伤害"]}
 
 
-##Citing this repository
+## Citing this repository
 If you find this code useful in your research, please consider citing us:
 ```javascript
   @inproceedings{HMN_SIGIR_2019
