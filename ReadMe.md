@@ -1,4 +1,4 @@
-## MHN
+## HMN
 The implementation of MHN in our paper:
 
 
