@@ -1,5 +1,5 @@
 ## HMN
-The implementation of MHN in our paper:
+The implementation of HMN in our paper:
 
 
 
