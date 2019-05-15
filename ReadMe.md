@@ -12,7 +12,7 @@ The implementation of HMN in our paper:Hierarchical Matching Network for Crime C
 
 
 ## Dataset
-CAIL2018
+CAIL2018, the download link:https://cail.oss-cn-qingdao.aliyuncs.com/CAIL2018_ALL_DATA.zip
 
 
 ## Example input data
