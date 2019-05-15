@@ -6,7 +6,7 @@ import torch
 from utils.parse_data import *
 
 stopWords =True
-with open('/home/iot/fanyu/Attention-BiDAF/data/stop_words.txt', 'r') as stops:
+with open('./data/stop_words.txt', 'r') as stops:
     s = stops.read()
     stop_words_from_file = s.split()
 stop_words_from_file = set(stop_words_from_file)
@@ -45,12 +45,12 @@ def makelaw():
     :return:parent2law(The type of law that each parent class contains)
     """
 
-    filelaw = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/newlaw.txt"
+    filelaw = "./data/newlaw.txt"
     input_lines = open(filelaw, 'r')
-    filetext = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/rulenew.txt"
+    filetext = "./data/rulenew.txt"
     text = open(filetext, 'r')
-    wordHelper = data_helper.Vocab("/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/word_dict_10w.pkl")
-    with open('/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/my_dict.txt', 'r') as f:
+    wordHelper = data_helper.Vocab("./data/word_dict_10w.pkl")
+    with open('./data/my_dict.txt', 'r') as f:
         data = f.read()
         data = data.rstrip()
         my_dict = json.loads(data)
@@ -79,7 +79,7 @@ def makelaw():
             seg_fact = stopword_remover(words) if stopWords == True else words
             # print(index,"---",seg_fact[0:5])
             # print(index, "---", seg_fact[0:5])
-            trans_text = wordHelper.transform_raw(seg_fact[0:5])
+            trans_text = wordHelper.transform_raw(seg_fact[0:20])
             length = len(trans_text)
 
             law_text.append(trans_text)

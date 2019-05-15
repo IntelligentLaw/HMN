@@ -44,6 +44,9 @@ def main():
                         help='comma-separated kernel size to use for convolution')
     parser.add_argument('-embed_num', type=int, default=100000, help='the num of vocabulary size')
     parser.add_argument('-no-cuda', action='store_true', default=False, help='disable the gpu')
+
+    parser.add_argument('--train-data-path', type=str, default=None, help='the train data directory')
+    parser.add_argument('--test-data-path', type=str, default=None, help='the test data directory')
     args = parser.parse_args()
 
 
@@ -51,17 +54,15 @@ def main():
     sys.stdout = Logger("./output/{}.txt".format(time_str))
 
     print("\nLoading data...")
-    accu_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/accu_dict.pkl"
-    law_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/law_dict.pkl"
-    word_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/word_dict_10w.pkl"
-    parent_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/parent_dict.pkl"
-    train_data_path = "/home/iot/fanyu/BiLabelEmbedding/new_data_with_parent/preprocess_good/transform_data_train_dir/"
-    dev_data_path = "/home/iot/fanyu/BiLabelEmbedding/new_data_with_parent/preprocess_good/transform_data_test_dir/"
-
+    law_path = "./data/law_dict.pkl"
+    word_path = "./data/word_dict_10w.pkl"
+    parent_path = "./data/parent_dict.pkl"
+    train_data_path = args.train_data_path
+    dev_data_path = args.test_data_path
 
     train_iter, dev_iter, word_num, law_num, parent_num = make_data(train_data_path, dev_data_path,
                                                           law_path, parent_path, word_path, args.batch_size, args.dev_batch_size)
-    args.model_name = 'TEST'
+    args.model_name = 'HMN'
     args.save_dir = "accu_snapshot"
     args.embed_num = word_num
     args.class_num = law_num
