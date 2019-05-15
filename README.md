@@ -33,6 +33,11 @@ each instance contains four parts:
 * **laws**: sub class
 * **textIds**: the fact descriptions transformed from text to id
 
+### Usage
+```
+python run.py
+```
+
 ### Citation
 For more information, please refer to our paper. If our work is helpful to you, please kindly cite our paper as:
 ```
