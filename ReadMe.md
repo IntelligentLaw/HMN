@@ -16,7 +16,7 @@ CAIL2018, the download link:https://cail.oss-cn-qingdao.aliyuncs.com/CAIL2018_AL
 
 
 ## Example input data
-the word has conveted into vector
+the word has converted into vector
 
 * parent class:parent class
 * laws:sub class

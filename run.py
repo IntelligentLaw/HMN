@@ -56,7 +56,7 @@ def main():
     word_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/word_dict_10w.pkl"
     parent_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/parent_dict.pkl"
     train_data_path = "/home/iot/fanyu/BiLabelEmbedding/new_data_with_parent/preprocess_good/transform_data_train_dir/"
-    dev_data_path = "/home/iot/fanyu/Attention-BiDAF/new_data_with_parent/preprocess_good/transform_data_test_dir/"
+    dev_data_path = "/home/iot/fanyu/BiLabelEmbedding/new_data_with_parent/preprocess_good/transform_data_test_dir/"
 
 
     train_iter, dev_iter, word_num, law_num, parent_num = make_data(train_data_path, dev_data_path,
