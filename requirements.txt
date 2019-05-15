@@ -1,0 +1,5 @@
+torchtext==0.2.0
+numpy==1.13.3
+torch==0.4.1
+jieba==0.39
+scikit_learn==0.21.0
