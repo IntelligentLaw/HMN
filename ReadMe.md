@@ -4,14 +4,16 @@ The implementation of HMN in our paper:Hierarchical Matching Network for Crime C
 
 
 ## Require
-
 * Python 3.6
+
 
 ## Reproducing Results
 * Run `python3 run.py`
 
+
 ## Dataset
 CAIL2018
+
 
 ## Example input data
 the word has conveted into vector
