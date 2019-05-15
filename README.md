@@ -22,7 +22,7 @@ We conduct our empirical experiments on two real-world legal datasets:
 {
   "text_len": 41,
   "laws": [234],
-  "textIds": [2935,10,3,330,16,406,2935,1802,2,272,4328,1064,877,818,272,5455, ...],
+  "textIds": [2935,10,3,330,16,406,2935,1802,2,272,4328,1064,877,818,272,5455, $...$],
   "parent_class": ["侵犯公民人身"]
 }
 ```
