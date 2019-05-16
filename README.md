@@ -34,6 +34,7 @@ each instance contains four parts:
 * **textIds**: the fact descriptions transformed from text to id
 
 ### Usage
+Reproducing the results reported in our paper, please run the code as follows:
 ```
 python run.py
 ```
